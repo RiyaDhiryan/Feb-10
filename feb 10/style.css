@@ -1,0 +1,193 @@
+*{
+    margin:0;
+    padding: 0;
+
+}
+body{
+    background-color: rgb(10, 10, 36);
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+/* Header */
+li,a{
+text-decoration: none;
+list-style: none;
+}
+nav ul li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+.main-frame img{
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+nav ul{
+    display: flex;
+    justify-content: end;
+    gap:30px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+.nav-home{
+    background-color: rgb(40, 40, 214);
+    padding: 4px 15px;
+    border-radius: 30px;
+  
+}
+/* Second part--> main */
+.main-hifi{
+    display: flex;
+    /* justify-content: center; */
+}
+.main-hifi img{
+    height:40px;
+    width:40px;
+}
+main{
+    display: flex;
+    justify-content: center;
+
+}
+.main-dev{
+    color: rgba(253, 253, 27, 0.909);
+}
+main h1,h3{
+    font-weight: 800;
+}
+
+.main-pc img{
+    height:300px;
+    width:300px;
+}
+.main-head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+main h1{
+    font-size: 35px;
+}
+/* Third part-->section */
+section{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    
+
+}
+.section-horizonal{
+    background-color:rgb(40, 40, 214);
+    height: 5px;
+    width:130px;
+    border-radius: 20px;
+}
+.section-images{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+     column-gap: 20px; 
+
+}
+.section-images img{
+    height: 200px;
+    width: 200px;
+}
+section p{
+    display:flex;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+/* Footer */
+footer{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer h3{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer-horizonal{
+    background-color:rgb(40, 40, 214);
+    height: 5px;
+    width:170px;
+    border-radius: 20px;
+}
+.footer-images{
+    margin-top: 30px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+ .footer-images img{
+    height:50px;
+    width:50px;
+  
+} 
+/* 2 frame */
+@media screen and (max-width:768px){
+    nav ul{
+        display: none;
+    }
+    
+    .main-hifi{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    main{
+        margin-top: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .main-frame img{
+        display:flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .main-pc img{
+        margin-top: 30px;
+    }
+    .main-dev{
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+    .section-images{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+}
+
